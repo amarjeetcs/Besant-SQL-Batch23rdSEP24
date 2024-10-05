@@ -1,0 +1,12 @@
+DCL(Data controll langulage full practical)
+----------------------------------------------
+select user from mysql.user;  --> for checking number of users present 
+SHOW GRANTS FOR 'root'@'localhost';--> used to check which database role u are logged in whether user or admin
+CREATE USER 'user1'@'localhost' IDENTIFIED BY 'root';
+open cmd and go to the C:\Program Files\MySQL\MySQL Server 8.0\bin path  where u have installed sql server 
+mysql -u root -p --> type this command to connect with sql server from cmd here root as root user u are login
+GRANT ALL PRIVILEGES ON *.* TO 'user1'@'localhost';  --> used to privide all privilages to user1 keep in mind always give privilage from admin i mean root user
+REVOKE ALL PRIVILEGES ON *.* FROM 'user1'@'localhost';  --> revoke all privilage from user1 
+GRANT SELECT ON Amarjeet.* TO 'user1'@'localhost';-> grant for select query on Amarjeet database to user1 user
+GRANT ALTER ON Amarjeet.* TO 'user1'@'localhost'; --> grant for alter on Amarjeet database to user1 user
+SHOW VARIABLES LIKE 'port';
